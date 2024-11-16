@@ -1,0 +1,24 @@
+<!-- 31) generate 2 textbox (having id txt1,txt2 respectively) , get values of both in data1 & data2. now show the
+sum of values in paragraph having id para ( note : if you recieve data from textbox then please check data type
+before you do the sum) -->
+
+
+<input type="text" name="" id="x1">
+<input type="text" name="" id="x2">
+<button onclick="f1()">click</button>
+<p id="p1"></p>
+
+<script>
+    'use strict'
+    function f1() {
+        var data1 = document.getElementById("x1").value;
+        var data2 = document.getElementById("x2").value;
+
+        let n1 = Number(data1);
+        let n2 = Number(data2);
+        if (!isNaN(n1) && !isNaN(n2)) {
+            var data3 = n1 + n2
+            document.getElementById("p1").innerHTML = data3;
+        }
+    };
+</script>

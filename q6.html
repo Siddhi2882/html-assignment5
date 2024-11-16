@@ -1,0 +1,16 @@
+<!-- 6) create a textbox, enter dummy content and use onkeyup event to show 2 result:
+a) data in capital case ( in paragraph having id para1)
+b) data in small case ( in paragraph having id para2)
+-->
+
+<input type="text" name="" id="t1" onkeyup="f1()">
+<p id="para1">upper case :</p>
+<p id="para2">lower case :</p>
+
+<script>
+    function f1() {
+        let data = document.getElementById("t1").value;
+        document.getElementById("para1").textContent = "upper case :" + data.toUpperCase();
+        document.getElementById("para2").textContent = "upper case :" + data.toLowerCase();
+    }
+</script>
